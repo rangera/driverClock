@@ -1,0 +1,22 @@
+# virtual environment
+.venv/
+
+# editor artifacts
+.vscode/
+
+# python build artifacts
+*.pyc
+__pycache__/
+
+# database artifacts
+instance/
+
+# test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# build artifacts
+dist/
+build/
+*.egg-info/
