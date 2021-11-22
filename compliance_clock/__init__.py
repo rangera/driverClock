@@ -1,14 +1,9 @@
 # import os
 
 from flask import Flask
-# from . import models
-# from . import endpoints
 
-# from .models.clock_event import Event
 from .endpoints import EVENT_BP
 from .endpoints import SUMMARY_BP
-
-# from .endpoints import clock_summary
 
 def create_app(test_config=None):
     # create and configure the app

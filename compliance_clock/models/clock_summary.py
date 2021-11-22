@@ -16,7 +16,7 @@ class Summary():
     
         self.time_value = sum(event.time 
                                 for event in events 
-                                if event.type in self.work_types[self.type])
+                                if event.work_status in self.work_types[self.type])
 
         self.violation_status = self.time_value > self.time_violation_limits[self.type]
    

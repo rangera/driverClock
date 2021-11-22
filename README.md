@@ -94,33 +94,33 @@ Used and installed by package
 - [x] Basic Flask.g backed Models
     - [x] Event
     - [x] Single Shift Summary (no time off reset)
-    - [] Add time off reset to Summary
+    - [ ] Add time off reset to Summary
 - [x] Service Runs
-- [] Tests and Coverage
+- [ ] Tests and Coverage
     - [x] Basic Tests for framework
-    - [] Summary Tests 
-        - [] Unit test examples from Requirements 
-    - [] Flask fixtures
-    - [] Finish Event Model tests
-    - [] Endpoint tests
-    - [] App test
-        - [] Full test examples from Requirements
-- [] Documentation
-    - [] GitHub
+    - [x] Summary Tests 
+    - [ ] Unit test examples from Requirements 
+    - [ ] Flask fixtures
+    - [ ] Finish Event Model tests
+    - [ ] Endpoint tests
+    - [ ] App test
+        - [ ] Full test examples from Requirements
+- [ ] Documentation
+    - [ ] GitHub
         - [x] Repository and README
         - [x] Roadmap/TODO
         - [x] Summary
         - [x] Instructions
-    - [] APIs
-        - [] Swagger?
-    - [] General Code documentation
-- [] Improvements
-    - [] Design notes
-    - [] Add MongoDB
-        - [] Event Document
-        - [] DB tests
-            - [] DB fixtures
-    - [] Add small templates for reports
+    - [ ] APIs
+        - [ ] Swagger?
+    - [ ] General Code documentation
+- [ ] Improvements
+    - [ ] Design notes
+    - [ ] Add MongoDB
+        - [ ] Event Document
+        - [ ] DB tests
+            - [ ] DB fixtures
+    - [ ] Add small templates for reports
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

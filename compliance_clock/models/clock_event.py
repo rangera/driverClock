@@ -1,4 +1,4 @@
-# from typing import List
+from typing import List
 
 from flask import g
 
@@ -8,7 +8,7 @@ class Event():
         self.work_status = work_status
         self.time = time
 
-    def save(self):
+    def save(self) -> None:
         if not g.events:
             g.events = []
         g.events.append(self)
@@ -17,5 +17,5 @@ class Event():
         return {"work_status": self.work_status,
                 "time": self.time}
 
-    def objects():
+    def objects() -> List:
         return g.events
