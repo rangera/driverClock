@@ -34,7 +34,7 @@ Applicaiton for regulation complaince regarding time worked and time spent drivi
 
 ### Built With
 
-* [Pythons]()
+* [Python]()
 * [Flask]()
 * [Pytest]()
 
@@ -97,15 +97,16 @@ Used and installed by package
     - [x] Move storage to consisent layer
     - [x] Rename to match Requirements
     - [ ] Add time off reset to Summary
+    - [ ] Update to session for storage
 - [x] Service Runs
-- [ ] Tests and Coverage
+- [x] Tests and Coverage
     - [x] Basic Tests for framework
     - [x] Summary Tests 
     - [x] Unit test examples from Requirements 
-    - [ ] Flask fixtures
-    - [ ] Endpoint tests
-    - [ ] App test
-        - [ ] Full test examples from Requirements
+    - [x] Flask fixtures
+    - [x] Endpoint tests
+    - [x] App test
+        - [x] Full test examples from Requirements
 - [ ] Documentation
     - [ ] GitHub
         - [x] Repository and README

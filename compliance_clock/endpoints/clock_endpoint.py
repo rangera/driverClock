@@ -10,7 +10,7 @@ bp = Blueprint('clock', __name__)
 
 @bp.route('/clock', methods=['GET'])
 def get_clock():
-    events = g.events if g.events is not None else []
+    events = g.events if 'events' in g else []
 
     drive_clock = Clock('D', events)
     work_clock = Clock('W', events)

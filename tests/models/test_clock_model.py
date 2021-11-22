@@ -66,11 +66,11 @@ def test_work_clock_validation():
         {'time':120, 'status':'OK'},
         {'time':3.5*60, 'status':'OK'}
     ),
-    # ( # requires shift reset
-    #   [('D',120),('W',60),('OFF',11*60)],
-    #   {'time':0, 'status':'OK'}),
-    #   {'time':0, 'status':'OK'}
-    # ),
+    ( # requires shift reset
+        [('D',120),('W',60),('OFF',11*60)],
+        {'time':0, 'status':'OK'},
+        {'time':0, 'status':'OK'}
+    ),
     (
         [('D',120),('W',600),('D',180)],
         {'time':300, 'status':'OK'},
@@ -84,6 +84,7 @@ def test_work_clock_validation():
 ])
 def test_clock_examples(events, drive_clock_expectations, work_clock_expectations):
     events = [Event(work_status, time) for (work_status, time) in events]
+    
     drive_clock = Clock('D', events).to_json()
     work_clock = Clock('W', events).to_json()
     assert drive_clock['time_value'] == drive_clock_expectations['time']
