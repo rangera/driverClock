@@ -96,8 +96,8 @@ Used and installed by package
     - [x] Single Shift Summary (no time off reset)
     - [x] Move storage to consisent layer
     - [x] Rename to match Requirements
-    - [ ] Add time off reset to Summary
-    - [ ] Update to session for storage
+    - [x] Add time off reset to Summary
+- [ ] Update to something else for storage, g doesn't work
 - [x] Service Runs
 - [x] Tests and Coverage
     - [x] Basic Tests for framework
@@ -108,7 +108,7 @@ Used and installed by package
     - [x] App test
         - [x] Full test examples from Requirements
 - [ ] Documentation
-    - [ ] GitHub
+    - [x] GitHub
         - [x] Repository and README
         - [x] Roadmap/TODO
         - [x] Summary

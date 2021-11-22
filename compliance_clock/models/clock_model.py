@@ -3,8 +3,9 @@ from typing import List
 from .event_model import Event
 
 class Clock():
-    time_violation_limits = {'D': 11*60,
-                             'W': 14*60}
+    time_limits = {'D': 11*60,
+                   'W': 14*60,
+                   'OFF': 10*60}
     work_types = {'D': ['D'],
                   'W': ['D','W','OFF']}
 
@@ -16,11 +17,19 @@ class Clock():
 
         self.type = 'DRIVE_CLOCK' if type == 'D' else 'WORK_CLOCK'
     
-        self.time_value = sum(event.time 
-                                for event in events 
-                                if event.work_status in self.work_types[type])
+        self.time_value = 0
+        time_off = 0
+        for event in events:
+            if event.work_status in self.work_types[type]:
+                self.time_value += event.time
+            if event.work_status == 'OFF':
+                time_off += event.time
+            else:
+                time_off =  0
+            if time_off >= self.time_limits['OFF']:
+                self.time_value = 0
 
-        self.violation_status = self.time_value > self.time_violation_limits[type]
+        self.violation_status = self.time_value > self.time_limits[type]
    
     def to_json(self):
         return {'type': self.type,

@@ -24,7 +24,6 @@ import json
         {'time':13*60, 'status':'OK'}
     ),
 ])
-
 def test_examples(client, events, drive_clock_expectations, work_clock_expectations):
     with client:
         for (work_status, time) in events:
