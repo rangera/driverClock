@@ -7,7 +7,7 @@ class Clock():
                              'W': 14*60}
     work_types = {'D': ['D'],
                   'W': ['D','W','OFF']}
-                  
+
     violation_status = False
 
     def __init__(self, type: str, events: List[Event]) -> None:
@@ -25,4 +25,4 @@ class Clock():
     def to_json(self):
         return {'type': self.type,
                 'violation_status': 'V' if self.violation_status else 'OK',
-                'time_value': 'self.time_value'}
+                'time_value': self.time_value}

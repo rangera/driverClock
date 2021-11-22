@@ -101,7 +101,7 @@ Used and installed by package
 - [ ] Tests and Coverage
     - [x] Basic Tests for framework
     - [x] Summary Tests 
-    - [ ] Unit test examples from Requirements 
+    - [x] Unit test examples from Requirements 
     - [ ] Flask fixtures
     - [ ] Endpoint tests
     - [ ] App test
@@ -116,12 +116,13 @@ Used and installed by package
         - [ ] Swagger?
     - [ ] General Code documentation
 - [ ] Improvements
-    - [ ] Design notes
-    - [ ] Add MongoDB
+    - [ ] ? Design notes
+    - [ ] ? Add MongoDB
         - [ ] Event Document
         - [ ] DB tests
             - [ ] DB fixtures
-    - [ ] Add small templates for reports
+    - [ ] ? Add Docker
+    - [ ] ? Add small templates for reports
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
