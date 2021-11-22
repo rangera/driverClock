@@ -94,6 +94,8 @@ Used and installed by package
 - [x] Basic Flask.g backed Models
     - [x] Event
     - [x] Single Shift Summary (no time off reset)
+    - [x] Move storage to consisent layer
+    - [x] Rename to match Requirements
     - [ ] Add time off reset to Summary
 - [x] Service Runs
 - [ ] Tests and Coverage
@@ -101,7 +103,6 @@ Used and installed by package
     - [x] Summary Tests 
     - [ ] Unit test examples from Requirements 
     - [ ] Flask fixtures
-    - [ ] Finish Event Model tests
     - [ ] Endpoint tests
     - [ ] App test
         - [ ] Full test examples from Requirements

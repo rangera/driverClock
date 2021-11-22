@@ -1,2 +1,2 @@
-from .clock_event import Event
-from .clock_summary import Summary
+from .event_model import Event
+from .clock_model import Clock

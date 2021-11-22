@@ -1,2 +1,2 @@
-from .clock_event import bp as EVENT_BP
-from .clock_summary import bp as SUMMARY_BP
+from .event_endpoint import bp as EVENT_BP
+from .clock_endpoint import bp as CLOCK_BP
