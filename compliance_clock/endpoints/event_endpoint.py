@@ -2,8 +2,7 @@ import json
 from flask import (
     Blueprint,
     request,
-    jsonify,
-    g
+    jsonify
 )
 from ..models import Event
 from ..resources import events

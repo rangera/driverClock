@@ -1,4 +1,4 @@
-from ..models import (Clock, Event)
+from ..models import Clock
 from ..resources import events
 
 from flask import (

@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS user;
 DROP TABLE IF EXISTS events;
 
 CREATE TABLE events (

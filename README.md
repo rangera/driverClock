@@ -44,10 +44,6 @@ Applicaiton for regulation complaince regarding time worked and time spent drivi
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
 Needed before installation:
@@ -127,7 +123,7 @@ Used and installed by package
     - [x] Endpoint tests
     - [x] App test
         - [x] Full test examples from Requirements
-- [ ] Documentation
+- [x] Documentation
     - [x] GitHub
         - [x] Repository and README
         - [x] Roadmap/TODO
@@ -135,6 +131,21 @@ Used and installed by package
         - [x] Instructions
     - [x] APIs
 - [ ] Improvements
+    - [ ] More exceptions and better return values
+    - [ ] More test cases, especially exceptions
+    - [ ] Add employee identifier
+        - [ ] Update schema with sort key
+        - [ ] Update resource (functions and queries)
+            - [ ] Save event (extra parameter and value)
+            - [ ] Get events (add selection criteria on query)
+        - [ ] Add parameter to Event Create
+            - [ ] Update docs
+        - [ ] Add parameter to Clock Get
+            - [ ] Update docs
+        - [ ] Update tests
+    - [ ] Database improvements
+        - [ ] Limit items on Get events
+        - [ ] Cleanup or archival solution?
     - [ ] ? Add MongoDB
         - [ ] Event Document
         - [ ] DB tests
