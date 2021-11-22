@@ -6,6 +6,7 @@ class Clock():
     time_limits = {'D': 11*60,
                    'W': 14*60,
                    'OFF': 10*60}
+                   
     work_types = {'D': ['D'],
                   'W': ['D','W','OFF']}
 
