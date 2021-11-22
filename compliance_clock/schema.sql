@@ -1,0 +1,8 @@
+DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS events;
+
+CREATE TABLE events (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  work_status TEXT NOT NULL,
+  time_duration INTEGER NOT NULL
+);

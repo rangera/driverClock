@@ -28,7 +28,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Applicaiton for regulation complaince regarding time worked and time spent driving. Backend RESTful service that gathers events and uses those events to generate compliance reports.
+Applicaiton for regulation complaince regarding time worked and time spent driving. Backend RESTful service that gathers events and uses those events to generate compliance reports. Uses Python's built in sqlite3 for storage.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -117,7 +117,7 @@ Used and installed by package
     - [x] Move storage to consisent layer
     - [x] Rename to match Requirements
     - [x] Add time off reset to Summary
-- [ ] Update to something else for storage, g doesn't work
+- [x] Update to sqlite for storage, g doesn't work
 - [x] Service Runs
 - [x] Tests and Coverage
     - [x] Basic Tests for framework

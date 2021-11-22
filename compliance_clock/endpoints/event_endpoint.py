@@ -6,6 +6,7 @@ from flask import (
     g
 )
 from ..models import Event
+from ..resources import events
 
 bp = Blueprint('event', __name__)
 
@@ -24,8 +25,5 @@ def add_event():
     record = json.loads(request.data)
     event = Event(work_status=record['work_status'],
                   time=record['time'])
-    if 'events' not in g:
-        g.events = []
-    g.events.append(event)
-    
+    events.save_event(event)
     return jsonify(event.to_json())

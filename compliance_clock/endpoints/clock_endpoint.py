@@ -1,9 +1,9 @@
-from ..models import Clock
+from ..models import (Clock, Event)
+from ..resources import events
 
 from flask import (
     Blueprint,
-    jsonify,
-    g
+    jsonify
 )
 
 bp = Blueprint('clock', __name__)
@@ -18,10 +18,9 @@ bp = Blueprint('clock', __name__)
 
 @bp.route('/clock', methods=['GET'])
 def get_clock():
-    events = g.events if 'events' in g else []
-
-    drive_clock = Clock('D', events)
-    work_clock = Clock('W', events)
+    all_events = events.get_all_events()
+    drive_clock = Clock('D', all_events)
+    work_clock = Clock('W', all_events)
 
     return jsonify([drive_clock.to_json(),
                     work_clock.to_json()])

@@ -1,9 +1,9 @@
 import json
 
 import pytest
-from flask import g
 
 from compliance_clock.models import Event
+from compliance_clock.resources.events import save_event
 
 def test_blank_clocks(client):
     with client:
@@ -41,10 +41,11 @@ def test_blank_clocks(client):
     ),
 ])
 
-def test_example_clocks(client, events, drive_clock_expectations, work_clock_expectations):
-    with client:
-        
-        g.events = [Event(work_status, time) for (work_status, time) in events]
+def test_example_clocks(app, client, events, drive_clock_expectations, work_clock_expectations):
+    with app.app_context():
+        events = [Event(work_status, time) for (work_status, time) in events]
+        for event in events: 
+            save_event(event)
 
         r = client.get('/clock')
         response = json.loads(r.data)
